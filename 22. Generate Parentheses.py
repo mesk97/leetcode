@@ -17,7 +17,6 @@
 # Constraints:
 # 1 <= n <= 8
 
-
 # logic:
 #   есть функция parenthesis 
 #       parenthesis[0] = ""
@@ -28,8 +27,6 @@
 #       dict()  1 -> set(), 2 -> set()
 #       set() -> позволяет убирать дупликаты
 #  
-
-results = dict()
 
 def parentheses(n):
     global results
@@ -60,6 +57,7 @@ def parentheses(n):
 def main(n):
     global results
 
+    results = dict()
     results[1] = set()
     results[1].add("()")
     
