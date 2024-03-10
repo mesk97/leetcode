@@ -36,8 +36,6 @@ def main(firstList, secondList):
     first = getFromList(firstList)
     second = getFromList(secondList)
 
-    #print(first, second)
-
     while first is not None and second is not None:
         intersect = doInterSect(first, second)
 
