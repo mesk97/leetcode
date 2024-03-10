@@ -17,6 +17,7 @@
 # Beats 33.44% of users with Python3
 # Memory 17.00 MB
 # Beats 21.25% of users with Python3
+# фиксим контриб в git
 
 # делаем стэк
 # дак каждым элементом
