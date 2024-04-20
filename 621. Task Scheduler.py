@@ -1,6 +1,19 @@
 # https://leetcode.com/problems/task-scheduler/description/
 # 10.46
-# 14 / 71 testcases passed
+# 14 / 71 testcases passed -> забыл про то по какому приоритету вытаскивают
+
+# Runtime
+# 1167
+# ms
+# Beats
+# 5.01%
+# of users with Python3
+# Memory
+# 17.28
+# MB
+# Beats
+# 27.96%
+# of users with Python3
 
 # algo
 # 0. есть "0 priority queue" - откуда берем при запуске 
@@ -109,6 +122,7 @@ def main(tasks, n):
 
         # определяем есть ли таски 
         if not runq.empty():
+            # вытаскиваем задачи с максимумом num на execution
             (num, task_type) = runq.get()
             # экзекьютим
             tasks_num = tasks_num - 1
