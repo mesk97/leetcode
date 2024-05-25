@@ -75,7 +75,10 @@ def mainRecursive(coins, amount):
         result = min(result, prev)
     
     if result < 0:
+        cache[amount] = result
         return result
+    
+    cache[amount] = result + 1
     return result + 1
 
 def mainDirect(coins, amount):
@@ -100,12 +103,10 @@ def mainDirect(coins, amount):
 
 def main(coins, amount):
     global cache
-    cache = set()
-    return mainDirect(coins, amount)
+    cache = dict()
+    return mainRecursive(coins, amount)
 
 if __name__ == "__main__":
-
-
     coins = [1,2,5]
     amount = 11
 
