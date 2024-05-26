@@ -57,6 +57,7 @@
 # String
 # Dynamic Programming
 
+# Рекурсивный способ с мемоизэйшен .. можно упростить .. потому что нагромождения 
 def solve(s):
     lens = len(s)
 
